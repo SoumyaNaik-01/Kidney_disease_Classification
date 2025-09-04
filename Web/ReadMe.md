@@ -35,7 +35,7 @@ The system was powered by **deep learning models**—**Basic CNN, VGG19, ResNet5
 - **Backend** → Flask (Python)  
 - **Models** → TensorFlow / Keras  
 - **Optimization** → Particle Swarm Optimization (PSO)  
-- **Deployment** → Render / GitHub  
+- **Deployment** → GitHub  
 
 ---
 
@@ -46,6 +46,8 @@ The system was powered by **deep learning models**—**Basic CNN, VGG19, ResNet5
 git clone https://github.com/SoumyaNaik-01/Kidney_disease_Classification.git
 cd Kidney_disease_Classification
 ```
+## Backend Setup (Flask)
+
 ### 2️ Create a Virtual Environment
 ```bash
 python -m venv venv
@@ -66,6 +68,15 @@ python app.py
 Now at http://127.0.0.1:5000/ access the web app.
 
 ---
+## Frontend Setup (Web UI)
+```
+npm install
+# set VITE_API_BASE if backend is remote, e.g. VITE_API_BASE=https://your-backend.onrender.com
+npm run dev
+```
+Open http://localhost:5173.
+
+---
 ## Results
 - Metric	Value
 - Best Model	InceptionV3
@@ -81,4 +92,5 @@ Now at http://127.0.0.1:5000/ access the web app.
 - Optimization: Particle Swarm Optimization (PSO)
 - Dataset: CT & X-ray Kidney Images
 - Language: Python 3.10+
+
 
